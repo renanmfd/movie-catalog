@@ -10,8 +10,8 @@ _core:
   default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
 id: movie_catalog_powered
 theme: movie_catalog
-region: sidebar_first
-weight: 0
+region: footer
+weight: -6
 provider: null
 plugin: system_powered_by_block
 settings:

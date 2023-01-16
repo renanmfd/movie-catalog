@@ -11,7 +11,7 @@ _core:
 id: movie_catalog_help
 theme: movie_catalog
 region: sidebar_first
-weight: 0
+weight: -7
 provider: null
 plugin: help_block
 settings:

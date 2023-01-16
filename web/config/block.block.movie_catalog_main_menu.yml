@@ -1,6 +1,6 @@
 uuid: 6de2960e-0788-4248-829c-332ecd74f39a
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -13,7 +13,7 @@ _core:
 id: movie_catalog_main_menu
 theme: movie_catalog
 region: primary_menu
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:
