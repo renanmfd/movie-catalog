@@ -1,0 +1,33 @@
+uuid: 5b147569-3f3b-465b-af88-504ce837d480
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.spotlight.field_title
+    - field.field.paragraph.spotlight.field_view
+    - paragraphs.paragraphs_type.spotlight
+  module:
+    - viewsreference
+id: paragraph.spotlight.default
+targetEntityType: paragraph
+bundle: spotlight
+mode: default
+content:
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_view:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: b662b5fa-18cd-4211-9396-6bd2a8cd1afc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - movie_catalog
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: movie_catalog_primary_admin_actions
+theme: movie_catalog
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

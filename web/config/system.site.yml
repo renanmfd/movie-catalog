@@ -6,9 +6,9 @@ name: 'Movie Catalog'
 mail: admin@example.com
 slogan: 'Not just another catalog!'
 page:
-  403: ''
-  404: ''
-  front: /node
+  403: /node/37
+  404: /node/37
+  front: /node/36
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

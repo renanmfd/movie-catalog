@@ -47,10 +47,13 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  viewsreference: 0
   views: 10
   paragraphs: 11
   standard: 1000
 theme:
-  olivero: 0
   claro: 0
+  stable9: 0
+  movie_catalog: 0
+  olivero: 0
 profile: standard

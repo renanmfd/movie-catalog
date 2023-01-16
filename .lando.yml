@@ -11,3 +11,7 @@ config:
 
 plugins:
   "@lando/drupal/": ./../../
+
+services:
+  myservice:
+    type: node:16.13

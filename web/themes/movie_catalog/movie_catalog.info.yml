@@ -1,0 +1,21 @@
+name: Movie Catalog
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - movie_catalog/base
+  - movie_catalog/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - movie_catalog/user
+  core/drupal.dropbutton:
+    - movie_catalog/dropbutton
+  core/drupal.dialog:
+    - movie_catalog/dialog
+  file/drupal.file:
+    - movie_catalog/file
+  core/drupal.progress:
+    - movie_catalog/progress
+core_version_requirement: ^9

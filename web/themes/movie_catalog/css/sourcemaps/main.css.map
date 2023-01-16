@@ -1,0 +1,1 @@
+{"version":3,"sources":["front-page.scss","main.css"],"names":[],"mappings":"AACI;EACI,aAAA;ACAR","file":"../main.css","sourcesContent":[".path-frontpage {\n    .page-title {\n        display: none;\n    }\n}\n",".path-frontpage .page-title {\n  display: none;\n}"]}

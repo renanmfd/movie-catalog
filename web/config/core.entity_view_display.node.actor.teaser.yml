@@ -8,17 +8,28 @@ dependencies:
     - field.field.node.actor.field_image
     - node.type.actor
   module:
+    - image
     - user
 id: node.actor.teaser
 targetEntityType: node
 bundle: actor
 mode: teaser
 content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
   field_biography: true
-  field_image: true
