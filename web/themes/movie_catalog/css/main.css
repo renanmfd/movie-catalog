@@ -48,25 +48,26 @@ h1, h2, h3, h4, h5, .field__label {
   z-index: 2;
 }
 
-#search-block-form {
+.block-views-exposed-filter-blocksearch-page-1 {
   font-size: 0;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-#search-block-form .form-type-search {
+.block-views-exposed-filter-blocksearch-page-1 .form-type-textfield {
   display: inline-block;
   width: calc(100% - 200px);
 }
-#search-block-form input.form-search {
+.block-views-exposed-filter-blocksearch-page-1 .form-type-textfield input.form-text {
   width: 100%;
   height: 40px;
   font-size: 20px;
 }
-#search-block-form .form-actions {
+.block-views-exposed-filter-blocksearch-page-1 .form-actions {
+  display: inline-block;
   width: 180px;
   padding-left: 20px;
 }
-#search-block-form .form-actions input {
+.block-views-exposed-filter-blocksearch-page-1 .form-actions input {
   font-size: 20px;
   width: 100%;
   height: 40px;
@@ -86,7 +87,8 @@ footer {
 }
 
 .view-spotlight-movies .view-content,
-.view-movies .view-content {
+.view-movies .view-content,
+.view-search .view-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +101,8 @@ footer {
   flex-wrap: wrap;
 }
 .view-spotlight-movies .views-row,
-.view-movies .views-row {
+.view-movies .views-row,
+.view-search .views-row {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30%;
   flex: 0 0 30%;

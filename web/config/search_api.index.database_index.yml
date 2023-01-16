@@ -1,0 +1,205 @@
+uuid: ec13a4cb-1110-42fc-9788-d0e7789d8dfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biography
+    - field.storage.node.field_cast
+    - field.storage.node.field_short_description
+    - search_api.server.database
+  module:
+    - node
+    - search_api
+id: database_index
+name: 'Database Index'
+description: ''
+read_only: false
+field_settings:
+  cast_field_biography:
+    label: 'Cast » Content » Biography'
+    datasource_id: 'entity:node'
+    property_path: 'field_cast:entity:field_biography'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_biography
+        - field.storage.node.field_cast
+      module:
+        - node
+  cast_title:
+    label: 'Cast » Content » Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_cast:entity:title'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_cast
+      module:
+        - node
+  field_biography:
+    label: Biography
+    datasource_id: 'entity:node'
+    property_path: field_biography
+    type: text
+    boost: !!float 3
+    dependencies:
+      config:
+        - field.storage.node.field_biography
+  field_short_description:
+    label: 'Short Description'
+    datasource_id: 'entity:node'
+    property_path: field_short_description
+    type: text
+    boost: !!float 3
+    dependencies:
+      config:
+        - field.storage.node.field_short_description
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  status:
+    label: status
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 5
+    dependencies:
+      module:
+        - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - actor
+        - movie
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  entity_type: {  }
+  ignore_character:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: false
+    fields:
+      - cast_field_biography
+      - cast_title
+      - field_short_description
+      - title
+    ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+  ignorecase:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: false
+    fields:
+      - cast_field_biography
+      - cast_title
+      - field_short_description
+      - title
+  language_with_fallback: {  }
+  rendered_item: {  }
+  stopwords:
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
+    all_fields: false
+    fields:
+      - cast_field_biography
+      - cast_title
+      - field_short_description
+      - title
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+  transliteration:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: false
+    fields:
+      - cast_field_biography
+      - cast_title
+      - field_short_description
+      - title
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: database
