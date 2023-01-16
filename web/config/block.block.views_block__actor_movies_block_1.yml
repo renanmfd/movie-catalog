@@ -1,0 +1,33 @@
+uuid: dfef5fc9-a924-4888-98a6-4022cf3b0700
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.actor_movies
+  module:
+    - node
+    - views
+  theme:
+    - movie_catalog
+id: views_block__actor_movies_block_1
+theme: movie_catalog
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:actor_movies-block_1'
+settings:
+  id: 'views_block:actor_movies-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      actor: actor
