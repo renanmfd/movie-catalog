@@ -88,7 +88,8 @@ footer {
 
 .view-spotlight-movies .view-content,
 .view-movies .view-content,
-.view-search .view-content {
+.view-search .view-content,
+.view-actor-movies .view-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +103,8 @@ footer {
 }
 .view-spotlight-movies .views-row,
 .view-movies .views-row,
-.view-search .views-row {
+.view-search .views-row,
+.view-actor-movies .views-row {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30%;
   flex: 0 0 30%;
