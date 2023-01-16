@@ -1,0 +1,26 @@
+uuid: 14f60a59-37ba-471b-8cb2-1450518b5352
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie.field_cast
+    - field.field.node.movie.field_image
+    - field.field.node.movie.field_short_description
+    - node.type.movie
+  module:
+    - user
+id: node.movie.teaser
+targetEntityType: node
+bundle: movie
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_cast: true
+  field_image: true
+  field_short_description: true

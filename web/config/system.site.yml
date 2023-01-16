@@ -2,9 +2,9 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: f3752dea-0770-4c27-a90c-cb622cbd061c
-name: 'Drush Site-Install'
+name: 'Movie Catalog'
 mail: admin@example.com
-slogan: ''
+slogan: 'Not just another catalog!'
 page:
   403: ''
   404: ''

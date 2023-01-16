@@ -1,0 +1,41 @@
+uuid: 85e40434-c518-442c-99f5-5068f20466db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.actor.field_biography
+    - field.field.node.actor.field_image
+    - node.type.actor
+  module:
+    - image
+    - text
+    - user
+id: node.actor.default
+targetEntityType: node
+bundle: actor
+mode: default
+content:
+  field_biography:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
