@@ -1,0 +1,31 @@
+.node--type-actor {
+    &.node--view-mode-teaser {
+        max-width: 300px;
+        padding: 0;
+        margin-bottom: 40px;
+        border-left: 1px solid black;
+        overflow: hidden;
+
+        & > * {
+            width: 100%;
+            margin-left: 30px;
+        }
+        .field--name-field-image {
+            img {
+                width: 90px;
+                height: auto;
+            }
+        }
+        .node__links,
+        .node__meta {
+            display: none;
+        }
+    }
+    .node__meta {
+        background-color: lightgray;
+        color: black;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

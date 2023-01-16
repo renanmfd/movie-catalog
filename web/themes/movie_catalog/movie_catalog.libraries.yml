@@ -49,7 +49,7 @@ base:
       css/components/ui-dialog.css:
         weight: -10
       css/main.css:
-        weight: -20
+        weight: 0
 dialog:
   version: VERSION
   css:

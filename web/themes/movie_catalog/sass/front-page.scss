@@ -3,3 +3,16 @@
         display: none;
     }
 }
+
+.view-spotlight-movies,
+.view-movies {
+    .view-content {
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .views-row {
+        flex: 0 0 30%;
+    }
+}

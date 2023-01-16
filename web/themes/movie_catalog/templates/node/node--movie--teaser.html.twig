@@ -80,26 +80,18 @@
 {{ attach_library('movie_catalog/node') }}
 <article{{ attributes.addClass(classes) }}>
 
+  {{ content.field_image }}
+
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      <a href="{{ url }}" rel="bookmark" target="__blank">{{ label }}</a>
     </h2>
   {% endif %}
   {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
-
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+    {{ content|without('field_image') }}
   </div>
 
 </article>

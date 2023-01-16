@@ -1,0 +1,17 @@
+.layout-container > * {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin-bottom: 50px !important;
+}
+
+h1, h2, h3, h4, h5, .field__label {
+    font-family: 'Righteous', cursive;
+}
